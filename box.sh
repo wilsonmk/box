@@ -259,6 +259,10 @@ blue "下载完成"
 bash "/root/nezha.sh"
 }
 
+# 安装x-ui面板
+function x-ui() {
+bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+}
 
 
 #Aria2 最强安装与管理脚本
@@ -395,6 +399,7 @@ function start_menu(){
     green " 5. ChangeSource Linux换源脚本·下载"
     green " 6. Besttrace 路由追踪·下载"
     green " 7. NEZHA.SH哪吒面板/探针"
+	green " 8. x-ui面板"
     yellow " --------------------------------------------------"
     green " 11. 获取本机IP"
     green " 12. 安装最新BBR内核·使用YUM·仅支持CentOS" 
@@ -448,6 +453,9 @@ function start_menu(){
 	;;
 	7 )
            nezha
+	;;
+	8 )
+		   x-ui
 	;;
 	11 )
            getip
