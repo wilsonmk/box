@@ -389,8 +389,7 @@ function start_menu(){
     clear
     red " BlueSkyXN 综合工具箱 Linux Supported ONLY" 
     green " FROM: https://github.com/BlueSkyXN/SKY-BOX "
-    green " HELP: https://www.blueskyxn.com/202104/4465.html "
-    green " USE:  wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh "
+    green " USE:  wget -O box.sh https://raw.githubusercontent.com/wilsonmk/box/main/box.sh && chmod +x box.sh && mv box.sh /usr/bin/box && clear "
     yellow " =================================================="
     green " 1. IPV.SH ipv4/6优先级调整一键脚本·下载" 
     green " 2. IPT.SH iptable一键脚本"
@@ -398,7 +397,7 @@ function start_menu(){
     green " 4. Rclone&Fclone·下载" 
     green " 5. ChangeSource Linux换源脚本·下载"
     green " 6. Besttrace 路由追踪·下载"
-    green " 7. NEZHA.SH哪吒面板/探针"
+    green " 7. 哪吒面板/探针"
 	green " 8. x-ui面板"
     yellow " --------------------------------------------------"
     green " 11. 获取本机IP"
