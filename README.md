@@ -3,20 +3,17 @@ BlueSkyXN  综合工具箱 Linux Supported ONLY 仅供个人非商用自用 版�
 
 BlueSkyXN Comprehensive Toolbox Linux only supports
 
-https://www.blueskyxn.com/202104/4465.html
-https://www.blueskyxn.com/202105/4585.html
-
 ## 使用方法
 
-wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh
+wget -O box.sh https://raw.githubusercontent.com/wilsonmk/box/main/box.sh && chmod +x box.sh && mv box.sh /usr/bin/box && clear
 
-<pre>wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh</pre>
+<pre>wget -O box.sh https://raw.githubusercontent.com/wilsonmk/box/main/box.sh && chmod +x box.sh && mv box.sh /usr/bin/box && clear</pre>
 
 ### ARM beta使用方法
 <details><summary>ARM beta使用方法</summary>
-wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/armbox.sh && chmod +x box.sh && clear && ./box.sh
+wget -O box.sh https://raw.githubusercontent.com/wilsonmk/box/main/armbox.sh && chmod +x armbox.sh && mv box.sh /usr/bin/box && clear
 
-<pre>wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/armbox.sh && chmod +x box.sh && clear && ./box.sh</pre>
+<pre>wget -O box.sh https://raw.githubusercontent.com/wilsonmk/box/main/armbox.sh && chmod +x armbox.sh && mv box.sh /usr/bin/box && clear</pre>
 </details>
 
 # 功能表
@@ -35,7 +32,9 @@ ChangeSource Linux换源脚本·下载
 
 Besttrace 路由追踪·下载
 
-NEZHA.SH哪吒面板/探针·下载
+哪吒面板/探针·下载
+
+X-UI面板安装
 
 获取本机IP
 
