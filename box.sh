@@ -18,11 +18,10 @@ blue(){
 
 #IPV.SH ipv4/6优先级调整一键脚本·下载
 function ipvsh(){
-wget -O "/root/ipv.sh" "https://raw.githubusercontent.com/BlueSkyXN/ChangeSource/master/ipv.sh" --no-check-certificate -T 30 -t 5 -d
-chmod +x "/root/ipv.sh"
-chmod 777 "/root/ipv.sh"
+wget -O "/root/warp.sh" "https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh"
+chmod 755 "/root/warp.sh"
 blue "下载完成"
-blue "输入 bash /root/ipv.sh 来运行"
+blue "输入 bash /root/warp.sh 来运行"
 }
 
 #IPT.SH iptable一键脚本·下载
@@ -261,9 +260,18 @@ bash "/root/nezha.sh"
 
 # 安装x-ui面板
 function x-ui() {
-bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+	bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
 }
 
+# 安装starship terminal
+function starship() {
+	curl -sS https://starship.rs/install.sh | sh
+}
+
+# 安装Docker
+function docker() {
+	curl -sS get.docker.com -o get-docker.sh | sh
+}
 
 #Aria2 最强安装与管理脚本
 function aria(){
@@ -387,11 +395,9 @@ red "卸载请 运行 wget https://raw.githubusercontent.com/FunctionClub/Fail2b
 #主菜单
 function start_menu(){
     clear
-    red " BlueSkyXN 综合工具箱 Linux Supported ONLY" 
-    green " FROM: https://github.com/BlueSkyXN/SKY-BOX "
     green " USE:  wget -O box.sh https://raw.githubusercontent.com/wilsonmk/box/main/box.sh && chmod +x box.sh && mv box.sh /usr/bin/box && clear "
     yellow " =================================================="
-    green " 1. IPV.SH ipv4/6优先级调整一键脚本·下载" 
+    green " 1. VPS套Warp工具" 
     green " 2. IPT.SH iptable一键脚本"
     green " 3. SpeedTest-Linux 下载"
     green " 4. Rclone&Fclone·下载" 
@@ -399,6 +405,8 @@ function start_menu(){
     green " 6. Besttrace 路由追踪·下载"
     green " 7. 哪吒面板/探针"
 	green " 8. x-ui面板"
+	green " 9. docker"
+	green " 10. starship"
     yellow " --------------------------------------------------"
     green " 11. 获取本机IP"
     green " 12. 安装最新BBR内核·使用YUM·仅支持CentOS" 
@@ -455,6 +463,12 @@ function start_menu(){
 	;;
 	8 )
 		   x-ui
+	;;
+	9 )
+		docker
+	;;
+	10 )
+		starship
 	;;
 	11 )
            getip
