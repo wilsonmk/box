@@ -411,7 +411,7 @@ function start_menu(){
 	green " 8. x-ui面板"
 	green " 9. docker"
 	green " 10. starship"
-	green " 100. nexttrace
+	green " 100. nexttrace"
     yellow " --------------------------------------------------"
     green " 11. 获取本机IP"
     green " 12. 安装最新BBR内核·使用YUM·仅支持CentOS" 
