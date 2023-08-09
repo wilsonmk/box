@@ -273,6 +273,10 @@ function docker() {
 	curl -sS get.docker.com -o get-docker.sh | sh
 }
 
+# 安装nexttrace
+function nexttrace() {
+	bash <(curl -Ls https://raw.githubusercontent.com/sjlleo/nexttrace/main/nt_install.sh)
+}
 #Aria2 最强安装与管理脚本
 function aria(){
 wget -O "/root/aria2.sh" "https://raw.githubusercontent.com/P3TERX/aria2.sh/master/aria2.sh" --no-check-certificate -T 30 -t 5 -d
@@ -407,6 +411,7 @@ function start_menu(){
 	green " 8. x-ui面板"
 	green " 9. docker"
 	green " 10. starship"
+	green " 100. nexttrace
     yellow " --------------------------------------------------"
     green " 11. 获取本机IP"
     green " 12. 安装最新BBR内核·使用YUM·仅支持CentOS" 
@@ -469,6 +474,9 @@ function start_menu(){
 	;;
 	10 )
 		starship
+	;;
+	100 )
+		nexttrace
 	;;
 	11 )
            getip
