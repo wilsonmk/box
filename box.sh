@@ -17,7 +17,7 @@ blue() {
 }
 
 #IPV.SH ipv4/6优先级调整一键脚本·下载
-function ipvsh() {
+function install_warp() {
 	wget -O "/root/warp.sh" "https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh"
 	chmod 755 "/root/warp.sh"
 	blue "下载完成"
@@ -444,7 +444,7 @@ function start_menu() {
 	read -p "请输入数字:" menuNumberInput
 	case "$menuNumberInput" in
 	1)
-		ipvsh
+		install_warp
 		;;
 	2)
 		iptsh
