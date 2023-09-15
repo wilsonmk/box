@@ -33,6 +33,13 @@ function iptsh() {
 	blue "输入 bash /root/ipt.sh 来运行"
 }
 
+# Tcping一键安装
+function tcping() {
+	apt install traceroute -y
+	wget -O /usr/bin/tcping https://raw.githubusercontent.com/deajan/tcpping/master/tcpping
+	chmod 755 /usr/bin/tcping
+}
+
 #Speedtest for Linux·下载
 function speedtest-linux() {
 	wget -O "/root/speedtest" "https://raw.githubusercontent.com/BlueSkyXN/ChangeSource/master/speedtest" --no-check-certificate -T 30 -t 5 -d
@@ -410,6 +417,7 @@ function start_menu() {
 	green " 9. docker"
 	green " 10. starship"
 	green " 100. nexttrace"
+	green " 101. tcping"
 	yellow " --------------------------------------------------"
 	green " 11. 获取本机IP"
 	green " 12. 安装最新BBR内核·使用YUM·仅支持CentOS"
@@ -475,6 +483,9 @@ function start_menu() {
 		;;
 	100)
 		nexttrace
+		;;
+	101)
+		tcping
 		;;
 	11)
 		getip
