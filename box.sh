@@ -18,7 +18,7 @@ blue() {
 
 #IPV.SH ipv4/6优先级调整一键脚本·下载
 function install_warp() {
-	wget -O "/root/warp.sh" "https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh"
+	wget -O "/root/warp.sh" "https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh"
 	chmod 755 "/root/warp.sh"
 	blue "下载完成"
 	blue "输入 bash /root/warp.sh 来运行"
@@ -38,6 +38,14 @@ function tcping() {
 	apt install traceroute -y
 	wget -O /usr/bin/tcping https://raw.githubusercontent.com/deajan/tcpping/master/tcpping
 	chmod 755 /usr/bin/tcping
+}
+
+# 更新box脚本
+function update() {
+	wget -O box.sh https://raw.githubusercontent.com/wilsonmk/box/main/box.sh
+	chmod +x box.sh
+	mv box.sh /usr/bin/box 
+	clear
 }
 
 #Speedtest for Linux·下载
@@ -558,6 +566,9 @@ function start_menu() {
 		;;
 	00)
 		btbox
+		;;
+	99)
+		update
 		;;
 	0)
 		exit 1
