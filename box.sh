@@ -283,7 +283,8 @@ function starship() {
 
 # 安装Docker
 function docker() {
-	curl -sS get.docker.com -o get-docker.sh | sh
+	#curl -sS get.docker.com -o get-docker.sh | sh
+	bash <(curl -Ls https://get.docker.com)
 }
 
 # 安装nexttrace
