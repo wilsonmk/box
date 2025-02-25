@@ -273,7 +273,7 @@ function nezha() {
 
 # 安装x-ui面板
 function x-ui() {
-	bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/x-ui/master/install.sh)
+	bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 }
 
 # 安装starship terminal
